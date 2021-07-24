@@ -187,6 +187,9 @@ footer{
 .widgets img{
 	margin: 0 10px;
 }
+.hidden-menu{
+	display: none;
+}
 
 
 
