@@ -1,0 +1,359 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: white;
+	background: url('../img/bg5.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 1500px;
+	font-family: helvetica;
+}
+html{
+	margin: 0;
+	position: relative;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	color: #F0965B;
+	transition: 0.3s all;
+	list-style: none;
+	cursor: pointer;
+}
+h2{
+	font-size: 26px;
+	font-weight: 300;
+}
+img{
+	max-width: 100%;
+}
+.underline{
+	content: "";
+	width: 2em;
+	height: 1em;
+	border-bottom: 3px solid #7E6B63;
+	display: block;
+	margin: auto;
+	margin-bottom: 2em;
+}
+.section-wrapp{
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	}.header__logo{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin: 10px 0;
+		}.logo-text{
+			font-size: 23px;
+			letter-spacing: 2px;
+			display: inline-block;
+			position: absolute;
+			text-align: center;
+			cursor: pointer;
+			color: #7E6B63;
+			}.logo-text::before{
+				content: "";
+				width: 30%;
+				right: -35%;
+				height: 5px;
+				position: relative;
+				display: block;
+				align-self: center;
+				border-top: 2px solid #7E6B63;
+				}.logo-text::after{
+				content: "";
+				width: 30%;
+				right: -35%;
+				height: 5px;
+				position: relative;
+				display: block;
+				align-self: center;
+				border-bottom: 2px solid #7E6B63;
+				}
+			.header__logo img{
+				display: inline-block;
+				cursor: pointer;
+			}
+.header__nav{
+	width: 100%;
+	text-align: center;
+	}.header__nav ul{
+		margin: auto;
+		display: flex;
+		justify-content: space-around;
+		}.header__nav li:hover{
+			color: #F0BB81;
+		}
+
+content{
+	padding: 20px 0;
+	text-align: center;
+	background-color: white;
+	display: block;
+	color: #74262C;
+	}.teachers-wrapp{
+			display: flex;
+			justify-content: space-between;
+			}.teachers-wrapp img{
+				border-radius: 50%;
+			}.teacher{
+				width: 25%;
+			}
+
+.contact-us{
+	background: #F1DBD3;
+	text-align: center;
+	color: #74262C;
+	padding: 20px 0;
+}
+
+.form-wrapp{
+	background: white;
+	padding: 0 40px;
+	padding-top: 80px;
+
+}
+form{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}	
+.form-item{
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	
+	}.form-item input, textarea{
+		width: 100%;
+		margin: 10px;
+		font-size: 16px;
+		padding: 5px;
+		padding-left: 15px;
+		border: 1px solid #74262C;
+		color: #74262C;
+	}textarea{
+		height: 100%;
+	}
+.submit{
+	background: #74262C;
+	color: white;
+	padding: 10px;
+	margin: auto;
+	cursor: pointer;
+	transition: .3s all;
+	font-size: 16px;
+	}.submit:hover{
+		background:white;
+		color: #74262C;
+	}
+
+.Gmaps{
+	margin-top: 40px;
+	width: 100%;
+	height: 500px;
+}	
+
+.toTop{
+	background: white;
+	text-align: center;
+	display: flex;
+	margin-top: 500px;
+	flex-direction: column;
+	width: 100%;
+	font-size: 20px;
+	padding: 20px 0;
+	cursor: pointer;
+	}.toTop img{
+		width: 70px;
+		margin: auto;
+		transform: rotate(180deg);
+		}
+footer{
+	background: #74262C;
+	color: white;
+	padding: 40px 0;
+}	
+.widgets img{
+	margin: 0 10px;
+}
+
+
+
+@media(max-width: 1200px){
+	h2{
+		font-size: 46px;
+	}
+	.us{
+		padding: 40px;
+		display: block;
+	}
+	.header__nav{
+		display: none;
+	}
+	.header__logo{
+		height: 500px;
+		}.header__logo img{
+			height: 100%;
+		}.logo-text{
+			font-size: 4em;
+			font-weight: bold;
+		}.logo-text::after{
+			border-bottom: 4px solid #7E6B63;
+		}
+		.logo-text::before{
+			border-top: 4px solid #7E6B63;
+		}
+
+	.teachers-wrapp{
+		flex-direction: column;
+		align-items: center;
+		padding: 0 40px;
+		}.teachers-wrapp img{
+			width: 60%;
+		}
+	.teacher{
+
+		width: 100%;
+	}
+
+	.form-item input, textarea{
+		font-size: 43px;
+		width: auto;
+		max-width: 100%;
+		position: relative;
+		margin: 0;
+		margin-bottom: 1em;
+		padding: 10px 10px 10px 30px;
+		}textarea{
+			height: 10em;
+		}.submit{
+			font-size: 43px;
+			padding: 10px;
+			width: 100%;
+		}	
+	.underline{
+		width: 5em;
+		border-bottom: 5px solid #7E6B63;
+	}
+	form{
+		flex-direction: column;
+	    align-items: center;
+	}
+	.form-item{
+		width: 100%;
+	}
+	.Gmaps{
+		max-width: 100%;
+	}
+	.toTop{
+		margin-top: 0px;
+		font-size: 43px;
+		}.toTop img{
+			width: 150px;
+			}
+	body{
+		background: none;
+	}
+	header{
+	background: url('../img/bg5.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 80vh;
+	}
+	.header__logo{
+		margin: 0;
+	}		
+	footer{
+		padding: 20px 40px;
+		}footer img{
+			width: 5em;
+			}
+	.mobile-nav{
+		width: 50px;
+		height: 50px;
+		background: #F5EFEA;
+		position: relative;
+		right: 50px;
+		top: 50px;
+		display: flex;
+		align-items: center;
+		padding: 50px;
+		border:3px solid #7E6B63;
+		border-radius: 10px;
+		justify-content: center;
+		}.burger-menu{
+			width: 70px;
+			height: 20px;
+			margin: 0 auto;
+			display: block;
+			position: relative;
+			top: 10px;
+			border-top: 10px solid black;
+			}.burger-menu::before{
+			content: "";
+			width: 70px;
+			position: relative;
+			border-top: 10px solid black;
+			display: block;
+			transform: translateY(-35px);
+			transition: 0.3s all ease 0s;
+			}
+			.burger-menu::after{
+			content: "";
+			width: 70px;
+			position: relative;
+			border-bottom: 10px solid black;
+			display: block;
+			top: 5px;
+			transition: 0.3s all ease 0s;
+			}
+			.burger-menu.active{
+				border-top: 0px;
+				top: 5px;
+			}
+			.burger-menu.active::after{
+				transform: rotate(45deg);
+				top: -10px;
+				transition: 0.3s all ease 0s;
+			}
+			.burger-menu.active::before{
+				transform: rotate(315deg);
+				transition: 0.3s all ease 0s;
+			}.hidden-menu{
+				position: relative;
+				top: 50px;
+				display: none;
+				width: 100%;
+				}.hidden-menu li{
+					padding: 30px 50px;
+					font-size: 50px;
+					text-align: left;
+					background: rgba(245,239,234, 0.8);
+					color: #7E6B63;
+					border-bottom: 3px #7E6B63 solid;
+					}.hidden-menu ul{
+						border: 3px #7E6B63 solid;
+						padding: 0;
+						margin: 0 50px;
+						border-bottom: none;
+					}.mobile-nav-wrapp{
+						position: absolute;
+						width: 100%;
+						top: 200px;
+						display: flex;
+						flex-direction: column;
+    					align-items: flex-end;
+					}
+}
